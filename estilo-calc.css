@@ -1,0 +1,40 @@
+legend{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+}
+
+fieldset{
+    height: 200pt;
+    width: 300pt;
+    text-align: center;
+    margin: auto;
+}
+
+div{
+    line-height: 2;
+    text-align: center;
+}
+
+body{
+    margin-left: auto;
+    background-color: lightblue;
+    font-size: 15pt;
+    font-family: Arial;
+}
+
+button{
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    background-color:black;
+}
+
+input{
+    border-radius: 4px;
+}
+
