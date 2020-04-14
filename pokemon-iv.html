@@ -22,29 +22,33 @@
             <input type="number" id="stamina">
         </div>
         <div>
-            <button onclick="iv()">Calcular IV</button>
+            <button onclick="ivcalc()">Calcular IV</button>
         </div>
-        <div>
+
+        <div id="iv" name="iv">Resultado</div>
+
+        <!--<div>
             <label for="iv">Pokémon IV</label>
             <input type="number" id="iv">
-        </div>
+        </div>-->
     </fieldset>
+
+    
+
     <div>
         <a target="_blank" href = "https://www.pokemongo.com/pt-pt/"><img src="pokemon-go-logo.png"></a>
     </div>
    
 
     <script>
-        function iv() {
+        function ivcalc() {
         var ataque = +document.getElementById('ataque').value;
         var defesa = +document.getElementById('defesa').value;
         var stamina = +document.getElementById('stamina').value;
         var iv = document.getElementById('iv');
         iv.value = (ataque + defesa + stamina) * 2.222;
+        iv.innerHTML = `O IV do Pokémon é de: ${iv.value} %!!!`
         }
-        
-
-        
         </script>
 </body>
 </html>
